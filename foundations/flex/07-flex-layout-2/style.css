@@ -8,6 +8,11 @@ body {
 
 li {
   list-style: none;
+  padding: 16px;
+}
+
+ul {
+  padding: 0;
 }
 
 a {
@@ -15,7 +20,6 @@ a {
   color: white;
   text-decoration: none;
   padding: 16px;
-
 }
 
 .header {
@@ -44,6 +48,7 @@ a {
   width: 300px;
   background: royalblue;
   box-sizing: border-box;
+  padding: 16px;
 }
 
 .main {
@@ -53,21 +58,18 @@ a {
 
 .card-content {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  flex: 1;
   gap: 16px;
   padding: 48px;
 }
 
 .card {
-  display: flex;
-  flex-wrap: wrap;
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+  flex-basis: calc(33% - 32px);
+  padding: 8px;
+  text-align: justify;
 }
 
-.one, .two {
-  display: flex;
-  align-content: center;
-  justify-content: space-between;
-}
